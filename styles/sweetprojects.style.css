@@ -7,7 +7,7 @@
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  flex-wrap: wrap;;
+  flex-wrap: wrap;
   width: 100%;
   /* transition: border 120ms ease; */
   height: 100%;
@@ -17,7 +17,7 @@
 .sweetprojects-item{
   width: calc(25% - 24px);
   height: 100px;
-  background: #e6e6e6;
+  background: #3c3c3c;
   margin: 10px;
   border: 2px solid #3c3c3c;
   border-radius: 3px;
@@ -26,15 +26,18 @@
 
 .sweetprojects-item[data-type="light"]{
   border-color: #c7c7c7;
+  background: #c7c7c7;
 }
 
 .sweetprojects-item:hover{
   border-color: #3a83f1;
+  background: #3a83f1;
 }
 
 .sweetprojects-item-cover{
   background: #e6e6e6;
   height: 67px;
+  border-radius: 2px;
 }
 
 .sweetprojects-item-caption{
@@ -44,6 +47,7 @@
   color: #fff;
   font-size: 12px;
   position: relative;
+  cursor: default;
 
   /* transition: background-color 120ms ease; */
 }
