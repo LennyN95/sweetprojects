@@ -19,6 +19,10 @@ This is package still under development.
 * Categories
 * API for third party packages
 
+## Open Sweet Project Pane
+
+In atom goto `View > Toggle Sweet Projects View`or press `ctrl + alt + p`. 
+
 ## What to ignore?
 
 The settings are stored in a .sweetproject file at the projects root.
