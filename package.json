@@ -5,14 +5,14 @@
   "description": "A short description of your package",
   "keywords": [
   ],
-  "activationCommands": {
-    "atom-workspace": "sweetprojects:toggle"
-  },
   "repository": "https://github.com/atom/sweetprojects",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
+  },
+  "deserializers": {
+    "sweetprojects/SweetprojectsView": "deserializeSweetprojectsView"
   }
 }

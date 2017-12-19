@@ -2,23 +2,18 @@
   "context-menu": {
     "atom-text-editor": [
       {
-        "label": "Toggle sweetprojects",
-        "command": "sweetprojects:toggle"
+        "label": "Project Settings",
+        "command": "sweetprojects:projectsettings"
       }
     ]
   },
   "menu": [
     {
-      "label": "Packages",
+      "label": "View",
       "submenu": [
         {
-          "label": "sweetprojects",
-          "submenu": [
-            {
-              "label": "Toggle",
-              "command": "sweetprojects:toggle"
-            }
-          ]
+          "label": "Toggle Sweet Projects View",
+          "command": "sweetprojects:toggle"
         }
       ]
     }
