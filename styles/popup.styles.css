@@ -84,3 +84,13 @@ div.sweetprojects-popup-foot > button{
   border-radius: 3px;
   padding: 3px 8px;
 }
+
+div.sweetprojects-popup-foot > button:first-of-type{
+  margin-left: 0;
+  padding-left: 0;
+}
+
+div.sweetprojects-popup-foot > button:last-of-type{
+  margin-right: 0;
+  padding-right: 0;
+}
