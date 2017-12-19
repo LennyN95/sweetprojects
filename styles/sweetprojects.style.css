@@ -38,13 +38,15 @@
 }
 
 .sweetprojects-item{
-  width: calc(25% - 24px);
+  width: calc(20% - 24px);
   height: 100px;
   background: #3c3c3c;
   margin: 10px;
   border: 2px solid #3c3c3c;
   border-radius: 3px;
   min-width: 160px;
+  max-width: 200px;
+  flex-grow: 2;
 }
 
 .sweetprojects-item[data-type="atom"]{
