@@ -38,6 +38,25 @@
   background: #e6e6e6;
   height: 67px;
   border-radius: 2px;
+  overflow: hidden;
+  position: relative;;
+}
+
+.sweetprojects-item-cover > p{
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  top: 20px;
+  width: 100%;
+  left: 0;
+  right: 0;
+  font-size: 11px;
+}
+
+.sweetprojects-item-cover > img{
+  max-width: 100%;
+  width: 100%;
 }
 
 .sweetprojects-item-caption{
