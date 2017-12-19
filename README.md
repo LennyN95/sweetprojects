@@ -4,6 +4,8 @@
 
 This is package still under development.
 
+![screenshot](https://www.moontec.de/atomimages/sweetprojects_img01.png)
+
 ## Features
 
 * Relies on atoms project history
