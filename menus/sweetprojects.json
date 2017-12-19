@@ -1,0 +1,26 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Toggle sweetprojects",
+        "command": "sweetprojects:toggle"
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "sweetprojects",
+          "submenu": [
+            {
+              "label": "Toggle",
+              "command": "sweetprojects:toggle"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
