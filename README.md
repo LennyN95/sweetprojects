@@ -13,6 +13,7 @@ This is package still under development.
 * Preview image when set an url
 * Set project name
 * Settings are saved in project-folder
+* Works well with pinned-tabs package
 
 ## Planned features
 
