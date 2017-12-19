@@ -16,29 +16,31 @@ This is package still under development.
 
 ## Planned features
 
-* Categories 
+* Categories
 * Search functionality
 * API for third party packages
 * Support for multiple paths
 
 ## Open Sweet Project Pane
 
-In atom goto `View > Toggle Sweet Projects View`or press `ctrl + alt + p`. 
+In atom goto `View > Toggle Sweet Projects View` or press `ctrl + alt + p`.
 
 ## What to ignore?
 
-The settings are stored in a .sweetproject file at the projects root.
-You can ignore them in your .gitignore or keep them to share projects settings.
-
-## Built With
-
-* [Atom](https://atom.io/) - Atom Editor
+The settings are stored in a `.sweetproject` file at the projects root.
+You can ignore them in your .gitignore or keep them to share project settings.
 
 ## Authors
 
 **Leonard Nürnberg** - *Initial work* - [LennyN95](https://github.com/LennyN95)
 
-Website-Previews are done with the `node-webshot` package.
+## Built With
+
+* [Atom](https://atom.io/) - Atom Editor
+
+## Used Node Packages
+
+* Website-Previews are done with the `node-webshot` package.
 
 ## License
 
