@@ -5,6 +5,12 @@
         "label": "Project Settings",
         "command": "sweetprojects:projectsettings"
       }
+    ],
+    ".sweetprojects > .sweetprojects-items > .sweetprojects-item": [
+      {
+        "label": "Project Settings",
+        "command": "sweetprojects:projectsettings"
+      }
     ]
   },
   "menu": [
