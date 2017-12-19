@@ -2,15 +2,20 @@
   "name": "sweetprojects",
   "main": "./lib/sweetprojects",
   "version": "1.0.0",
-  "description": "A short description of your package",
-  "keywords": [],
+  "description": "(Extendable) project management for atom.",
+  "keywords": [
+    "project",
+    "management",
+    "api",
+    "website",
+    "preview"
+  ],
   "repository": "https://github.com/LennyN95/sweetprojects",
   "license": "MIT",
   "engines": {
     "atom": ">=1.0.0 <2.0.0"
   },
   "dependencies": {
-    "file-system": "^2.2.2",
     "node-webshot": "^1.0.2"
   },
   "deserializers": {
