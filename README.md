@@ -8,16 +8,18 @@ This is package still under development.
 
 ## Features
 
-* Relies on atoms project history
-* Project overview
+* Based on atoms project history
+* Projects overview in center or side pane
 * Preview image when set an url
 * Set project name
 * Settings are saved in project-folder
 
 ## Planned features
 
-* Categories
+* Categories 
+* Search functionality
 * API for third party packages
+* Support for multiple paths
 
 ## Open Sweet Project Pane
 
