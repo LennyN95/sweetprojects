@@ -26,6 +26,7 @@ This is package still under development.
 
 In atom goto `View > Toggle Sweet Projects View` or press `ctrl + alt + p`.
 To open a project *double click* the project tile. The project will load in a new window.
+Right-click a project tile and select `Project Settings` to enter a project name and an url.
 
 ## What to ignore?
 
