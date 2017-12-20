@@ -18,7 +18,8 @@
   align-self: center;
   padding: 10px;
   min-width: 400px;
-  height: 300px;
+  /* height: 300px; */
+  max-height: 95%;
   border-radius: 3px;
   box-shadow: 0 2px 15px -3px rgba(0,0,0,0.3);
 }
@@ -36,11 +37,29 @@ div.sweetprojects-popup-head > p{
 }
 
 div.sweetprojects-popup-body{
-  height: calc(100% - 62px);
+  min-height: 160px;
   padding: 10px 0;
+  overflow-y: auto;
+  max-height: calc(100vh - 110px);
 }
 
-div.sweetprojects-popup-body > div{
+div.sweetprojects-popup-body-group{
+  margin: 10px 0;
+}
+
+div.sweetprojects-popup-body-group > h1{
+  font-size: 13px;
+  margin: 0 0 5px 0;
+  padding: 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+}
+
+div.sweetprojects-popup-body-group:first-of-type > h1{
+  display: none;
+  margin-top: 0;
+}
+
+div.sweetprojects-popup-body-item{
   background: #e6e6e6;
   padding: 2px;
   border-radius: 3px;
@@ -48,7 +67,7 @@ div.sweetprojects-popup-body > div{
   margin: 0 0 10px 0;
 }
 
-div.sweetprojects-popup-body > div > label{
+div.sweetprojects-popup-body-item > label{
   float: left;
   padding: 0 5px;
   line-height: 21px;
@@ -56,11 +75,11 @@ div.sweetprojects-popup-body > div > label{
   margin: 0;
 }
 
-div.sweetprojects-popup-body > div > label:after{
+div.sweetprojects-popup-body-item > label:after{
   content: ':';
 }
 
-div.sweetprojects-popup-body > div > input{
+div.sweetprojects-popup-body-item > input{
   float: right;
   background: #fff;
   padding: 2px 5px;
@@ -70,13 +89,15 @@ div.sweetprojects-popup-body > div > input{
 }
 
 div.sweetprojects-popup-foot{
-  height: 30px;
+  /* height: 30px; */
+  overflow: hidden;
   border-top: 1px solid #dfdfdf;
+  padding: 10px 0 0 0;
 }
 
 div.sweetprojects-popup-foot > button{
   float: right;
-  margin: 10px 5px;
+  margin: 0 5px;
   /* border: 1px solid #dedede; */
   /* background: #f9f9f9; */
   background: transparent;
