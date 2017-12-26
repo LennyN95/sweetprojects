@@ -62,7 +62,7 @@ Inputs with the type `select` can have an additional property `options`:
 ]}
 ```
 
-You can get the value the user set for the active project by calling the getValue method:
+You can get the value the user set for the active project by calling the `getValue` method:
 The first parameter is the namespace (your package name). The second one is the name of the input field, like defined above.
 ```
 if(atom.sweetprojects.isActive('your-package-name')){
@@ -70,7 +70,7 @@ if(atom.sweetprojects.isActive('your-package-name')){
   // the value of the variable text is the text the user set for this field on the project loaded when this code is executed
 }
 ```
-The getValue method will always return the value set for the active project.
+The `isActive` method returns true, if your projects section is turned on for this project. False if not. The `getValue` method will always return the value set for the *active project*.
 
 ## Authors
 
