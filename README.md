@@ -4,8 +4,8 @@
 
 This is package still under development.
 
-![screenshot](https://www.moontec.de/atomimages/sweetprojects_img01.png){:width="70%"}
-![screenshot](https://www.moontec.de/atomimages/sweetprojects_img02.png){:width="30%"}
+![screenshot](https://www.moontec.de/atomimages/sweetprojects_img01.png)
+ <img src="https://www.moontec.de/atomimages/sweetprojects_img02.png" width="300"/>
 
 ## Features
 
