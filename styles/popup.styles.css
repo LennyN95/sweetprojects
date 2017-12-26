@@ -59,6 +59,14 @@ div.sweetprojects-popup-body-group:first-of-type > h1{
   margin-top: 0;
 }
 
+div.sweetprojects-popup-body-group > h1 > input{
+  float: right;;
+}
+
+div.sweetprojects-popup-body-items{
+  background: red;
+}
+
 div.sweetprojects-popup-body-item{
   background: #e6e6e6;
   padding: 2px;
