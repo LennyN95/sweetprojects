@@ -46,12 +46,12 @@ atom.sweetprojects.setInputs('your-package-name', {
     package: 'your-package-name',
     label: 'Your Package Name To Be Displayed',
     inputs: [
-      {name: 'myInput', label: 'My Input', value: 'hi', type: 'text'}
+      {name: 'myInput', label: 'My Input', value: 'hi', type: 'text', placeholder: 'Insert text here'}
     ]
   });
 ```
 
-You can also have the following types: `checkbox`, `number`, `select`
+You can also have the following types: `checkbox`, `number`, `password`, `select`.
 
 Inputs with the type `select` can have an additional property `options`:
 ```
