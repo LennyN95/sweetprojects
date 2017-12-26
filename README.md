@@ -35,8 +35,8 @@ You can ignore them in your .gitignore or keep them to share project settings.
 
 ## How to use the API in your own package?
 
-First of all you have to register a json file under an unique namespace.
-Always use your package name as namespace.
+First of all you have to register a json definition like shown below under an unique namespace.
+Always use your **package name** as namespace.
 
 The following code will register a json for the package `your-package-name`.
 The settings dialog of each project will now display a new section with the title `Your Package Name To Be Displayed` and a simple text input field with the label `My Input` and a default value `hi`.
