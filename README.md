@@ -14,12 +14,12 @@ This is package still under development.
 * Set project name
 * Settings are saved in project-folder
 * Works well with pinned-tabs package
+* **NEW**: Third-party packages can use the sweetprojects api to offer project dependent settings
 
 ## Planned features
 
 * Categories
 * Search functionality
-* API for third party packages
 * Support for multiple paths
 
 ## Open Sweet Project Pane
@@ -32,6 +32,45 @@ Right-click a project tile and select `Project Settings` to enter a project name
 
 The settings are stored in a `.sweetproject` file at the projects root.
 You can ignore them in your .gitignore or keep them to share project settings.
+
+## How to use the API in your own package?
+
+First of all you have to register a json file under an unique namespace.
+Always use your package name as namespace.
+
+The following code will register a json for the package `your-package-name`.
+The settings dialog of each project will now display a new section with the title `Your Package Name To Be Displayed` and a simple text input field with the label `My Input` and a default value `hi`.
+
+```
+atom.sweetprojects.setInputs('your-package-name', {
+    package: 'your-package-name',
+    label: 'Your Package Name To Be Displayed',
+    inputs: [
+      {name: 'myInput', label: 'My Input', value: 'hi', type: 'text'}
+    ]
+  });
+```
+
+You can also have the following types: `checkbox`, `number`, `select`
+
+Inputs with the type `select` can have an additional property `options`:
+```
+{name: 'mySelect', label: 'My Select', value: '', type: 'select', options: [
+  {value: 'option1', label: 'Option1'},
+  {value: 'option2', label: 'Option2'},
+  {value: 'option3', label: 'Option3'}
+]}
+```
+
+You can get the value the user set for the active project by calling the getValue method:
+The first parameter is the namespace (your package name). The second one is the name of the input field, like defined above.
+```
+if(atom.sweetprojects.isActive('your-package-name')){
+  var text = atom.sweetprojects.getValue('your-package-name', 'myInput');
+  // the value of the variable text is the text the user set for this field on the project loaded when this code is executed
+}
+```
+The getValue method will always return the value set for the active project.
 
 ## Authors
 
