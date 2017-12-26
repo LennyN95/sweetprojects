@@ -88,6 +88,11 @@ div.sweetprojects-popup-body-item > input{
   width: calc(100% - 130px);
 }
 
+div.sweetprojects-popup-body-item > select{
+  float: right;
+  width: 247px;
+}
+
 div.sweetprojects-popup-foot{
   /* height: 30px; */
   overflow: hidden;
