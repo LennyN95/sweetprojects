@@ -5,6 +5,7 @@
 This is package still under development.
 
 ![screenshot](https://www.moontec.de/atomimages/sweetprojects_img01.png)
+![screenshot](https://www.moontec.de/atomimages/sweetprojects_img02.png)
 
 ## Features
 
