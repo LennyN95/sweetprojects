@@ -43,13 +43,15 @@ The following code will register a json for the package `your-package-name`.
 The settings dialog of each project will now display a new section with the title `Your Package Name To Be Displayed` and a simple text input field with the label `My Input` and a default value `hi`.
 
 ```
-atom.sweetprojects.setInputs('your-package-name', {
-    package: 'your-package-name',
-    label: 'Your Package Name To Be Displayed',
-    inputs: [
-      {name: 'myInput', label: 'My Input', value: 'hi', type: 'text', placeholder: 'Insert text here'}
-    ]
-  });
+if(atom.sweetprojects){
+  atom.sweetprojects.setInputs('your-package-name', {
+      package: 'your-package-name',
+      label: 'Your Package Name To Be Displayed',
+      inputs: [
+        {name: 'myInput', label: 'My Input', value: 'hi', type: 'text', placeholder: 'Insert text here'}
+      ]
+    });
+}
 ```
 
 You can also have the following types: `checkbox`, `number`, `password`, `select`.
@@ -66,12 +68,16 @@ Inputs with the type `select` can have an additional property `options`:
 You can get the value the user set for the active project by calling the `getValue` method:
 The first parameter is the namespace (your package name). The second one is the name of the input field, like defined above.
 ```
-if(atom.sweetprojects.isActive('your-package-name')){
-  var text = atom.sweetprojects.getValue('your-package-name', 'myInput');
-  // the value of the variable text is the text the user set for this field on the project loaded when this code is executed
+if(atom.sweetprojects){
+  if(atom.sweetprojects.isActive('your-package-name')){
+    var text = atom.sweetprojects.getValue('your-package-name', 'myInput');
+    // the value of the variable text is the text the user set for this field on the project loaded when this code is executed
+  }
 }
 ```
 The `isActive` method returns true, if your projects section is turned on for this project. False if not. The `getValue` method will always return the value set for the *active project*.
+
+Don't forget to check the availability of the sweetprojects api. Simply check if the *sweetprojects* property exists in the *atom* object by doing `if(atom.sweetprojects)`.
 
 ## Authors
 
