@@ -1,7 +1,7 @@
 {
   "name": "sweetprojects",
   "main": "./lib/sweetprojects",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "(Extendable) project management for atom.",
   "keywords": [
     "project",
