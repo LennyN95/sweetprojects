@@ -39,6 +39,8 @@ You can ignore them in your .gitignore or keep them to share project settings.
 First of all you have to register a json definition like shown below under an unique namespace.
 Always use your **package name** as namespace.
 
+### Define inputs
+
 The following code will register a json for the package `your-package-name`.
 The settings dialog of each project will now display a new section with the title `Your Package Name To Be Displayed` and a simple text input field with the label `My Input` and a default value `hi`.
 
@@ -65,6 +67,8 @@ Inputs with the type `select` can have an additional property `options`:
 ]}
 ```
 
+### Get values
+
 You can get the value the user set for the active project by calling the `getValue` method:
 The first parameter is the namespace (your package name). The second one is the name of the input field, like defined above.
 ```
@@ -78,6 +82,31 @@ if(atom.sweetprojects){
 The `isActive` method returns true, if your projects section is turned on for this project. False if not. The `getValue` method will always return the value set for the *active project*.
 
 Don't forget to check the availability of the sweetprojects api. Simply check if the *sweetprojects* property exists in the *atom* object by doing `if(atom.sweetprojects)`.
+
+### Conditions
+
+Sometimes input fields depend on the value of other fields. For example, you may only want the user to enter a password if he selected use password in your selectbox before. You can do that with conditions. Each input field can have a optional `condition` property where you can define under which condition the field is displayed. A condition string must have the folowing format:
+
+```
+// [input-name] [operator] [value]
+condition: 'mySelect=option1'
+```
+accepted operators:
+* `=` equal
+* `>` higher *(numerical)*
+* `<` lower *(numerical)*
+* `>=` higher and equal  *(numerical)*
+* `<=` lower and equal  *(numerical)*
+* `<>` not equal
+
+You can combine **multiple conditions** to more complex conditions by using `and` and `or`.
+And operators (`&`) have a stronger binding then or operators (`|`).  
+
+```
+{name: 'complexInput', label: 'input with condition', value: '', type: 'text', placeholder: '', condition: 'mySelect=option1|mySelect=option2&myInput=hi'}
+```
+
+The condition of the example above causes the input field *complexInput* to hide and become visible if either *Option1* is selected in the field *mySelect* **or** *Option2* is selected and the value of the input field *myInput* is equal to *'hi'*.
 
 ## Authors
 
