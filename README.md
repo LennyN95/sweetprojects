@@ -75,7 +75,8 @@ The first parameter is the namespace (your package name). The second one is the 
 if(atom.sweetprojects){
   if(atom.sweetprojects.isActive('your-package-name')){
     var text = atom.sweetprojects.getValue('your-package-name', 'myInput');
-    // the value of the variable text is the text the user set for this field on the project loaded when this code is executed
+    // the value of the variable text is the text the user set for this field on
+    // the project loaded when this code is executed
   }
 }
 ```
@@ -103,7 +104,8 @@ You can combine **multiple conditions** to more complex conditions by using `and
 And operators (`&`) have a stronger binding then or operators (`|`).  
 
 ```
-{name: 'complexInput', label: 'input with condition', value: '', type: 'text', placeholder: '', condition: 'mySelect=option1|mySelect=option2&myInput=hi'}
+{name: 'complexInput', label: 'input with condition', value: '', type: 'text', placeholder: '',
+condition: 'mySelect=option1|mySelect=option2&myInput=hi'}
 ```
 
 The condition of the example above causes the input field *complexInput* to hide and become visible if either *Option1* is selected in the field *mySelect* **or** *Option2* is selected and the value of the input field *myInput* is equal to *'hi'*.
