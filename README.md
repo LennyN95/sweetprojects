@@ -110,6 +110,8 @@ condition: 'mySelect=option1|mySelect=option2&myInput=hi'}
 
 The condition of the example above causes the input field *complexInput* to hide and become visible if either *Option1* is selected in the field *mySelect* **or** *Option2* is selected and the value of the input field *myInput* is equal to *'hi'*.
 
+**Let me know if you're using the sweetprojects api in your own packages so I can add a link to your project!**
+
 ## Authors
 
 **Leonard Nürnberg** - *Initial work* - [LennyN95](https://github.com/LennyN95)
