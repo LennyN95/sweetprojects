@@ -58,7 +58,7 @@ if(atom.sweetprojects){
 
 You can also have the following types: `checkbox`, `number`, `password`, `select`.
 
-Inputs with the type `select` can have an additional property `options`:
+Inputs with the type `select` must have an additional property `options`:
 ```
 {name: 'mySelect', label: 'My Select', value: '', type: 'select', options: [
   {value: 'option1', label: 'Option1'},
@@ -86,7 +86,7 @@ Don't forget to check the availability of the sweetprojects api. Simply check if
 
 ### Conditions
 
-Sometimes input fields depend on the value of other fields. For example, you may only want the user to enter a password if he selected use password in your selectbox before. You can do that with conditions. Each input field can have a optional `condition` property where you can define under which condition the field is displayed. A condition string must have the folowing format:
+Sometimes input fields depend on the value of other fields. For example, you may only want the user to enter a password if he selected use password in your selectbox before. You can do that with conditions. Each input field can have an optional `condition` property where you can define under which condition the field is displayed. A condition string must have the folowing format:
 
 ```
 // [input-name] [operator] [value]
@@ -101,7 +101,7 @@ accepted operators:
 * `<>` not equal
 
 You can combine **multiple conditions** to more complex conditions by using `and` and `or`.
-And operators (`&`) have a stronger binding then or operators (`|`).  
+And-operators (`&`) have a stronger binding than or-operators (`|`).  
 
 ```
 {name: 'complexInput', label: 'input with condition', value: '', type: 'text', placeholder: '',
